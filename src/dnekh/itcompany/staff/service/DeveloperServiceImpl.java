@@ -6,7 +6,7 @@ public class DeveloperServiceImpl implements DeveloperService {
 
     @Override
     public void toWork() {
-        System.out.println("Developer starts work");
+        System.out.println("Developer starts to work");
     }
 
     @Override
