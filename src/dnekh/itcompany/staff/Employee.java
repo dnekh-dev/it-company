@@ -2,14 +2,15 @@ package dnekh.itcompany.staff;
 
 public class Employee {
 
-    private int id;
+    private final int id;
     private String firstName;
     private String lastName;
     private int age;
     private String occupation;
     private int income;
 
-    public Employee() {
+    public Employee(int id) {
+        this.id = id;
     }
 
     public Employee(int id, String firstName, String lastName, int age, String occupation, int income) {
