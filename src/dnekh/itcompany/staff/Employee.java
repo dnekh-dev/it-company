@@ -88,6 +88,6 @@ public abstract class Employee {
                 ", department=" + department +
                 ", grade=" + grade +
                 ", income=" + income +
-                '}';
+                ", ";
     }
 }

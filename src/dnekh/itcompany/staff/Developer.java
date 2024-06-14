@@ -38,9 +38,8 @@ public class Developer extends Employee {
 
     @Override
     public String toString() {
-        return "Developer{" +
-                "programmingLanguage='" + programmingLanguage + '\'' +
-                ", isBackEndDeveloper=" + isBackEndDeveloper +
-                '}';
+        return super.toString() +
+                "programmingLanguage=" + programmingLanguage +
+                ", isBackEndDeveloper=" + isBackEndDeveloper + "}";
     }
 }

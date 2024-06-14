@@ -44,9 +44,8 @@ public class Manager extends Employee {
 
     @Override
     public String toString() {
-        return "Manager{" +
+        return super.toString() +
                 "teamSize=" + teamSize +
-                ", yearsOfExperience=" + yearsOfExperience +
-                '}';
+                ", yearsOfExperience=" + yearsOfExperience + "}";
     }
 }

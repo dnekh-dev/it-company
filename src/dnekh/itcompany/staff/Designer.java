@@ -38,9 +38,8 @@ public class Designer extends Employee {
 
     @Override
     public String toString() {
-        return "Designer{" +
-                "designTools='" + designTools + '\'' +
-                ", specialization='" + specialization + '\'' +
-                '}';
+        return super.toString() +
+                "designTools=" + designTools +
+                ", specialization=" + specialization + "}";
     }
 }
