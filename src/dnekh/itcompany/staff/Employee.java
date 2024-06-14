@@ -21,6 +21,11 @@ public class Employee {
         this.income = income;
     }
 
+    public void toWork() {
+        System.out.println("Employee is working1");
+    }
+
+    //getters and setters section
     public int getId() {
         return id;
     }

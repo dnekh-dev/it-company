@@ -11,11 +11,12 @@ public class Designer extends Employee {
         this.specialization = specialization;
     }
 
-    public Designer(String designTools, String specialization) {
-        this.designTools = designTools;
-        this.specialization = specialization;
+    @Override
+    public void toWork() {
+        System.out.println("Designer is working");
     }
 
+    //getters and setter section
     public String getDesignTools() {
         return designTools;
     }

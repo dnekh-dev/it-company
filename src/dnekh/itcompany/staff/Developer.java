@@ -11,11 +11,12 @@ public class Developer extends Employee {
         this.isBackEndDeveloper = isBackEndDeveloper;
     }
 
-    public Developer(String programmingLanguage, boolean isBackEndDeveloper) {
-        this.programmingLanguage = programmingLanguage;
-        this.isBackEndDeveloper = isBackEndDeveloper;
+    @Override
+    public void toWork() {
+        System.out.println("Developer is working");
     }
 
+    //getters and setters section
     public String getProgrammingLanguage() {
         return programmingLanguage;
     }

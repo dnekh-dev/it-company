@@ -13,12 +13,12 @@ public class Manager extends Employee {
         this.yearsOfExperience = yearsOfExperience;
     }
 
-    public Manager(String department, int teamSize, int yearsOfExperience) {
-        this.department = department;
-        this.teamSize = teamSize;
-        this.yearsOfExperience = yearsOfExperience;
+    @Override
+    public void toWork() {
+        System.out.println("Manager is working");
     }
 
+    //getters and setters section
     public String getDepartment() {
         return department;
     }
