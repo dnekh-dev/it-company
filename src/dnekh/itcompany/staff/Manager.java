@@ -1,14 +1,15 @@
 package dnekh.itcompany.staff;
 
+import dnekh.itcompany.enums.Department;
+import dnekh.itcompany.enums.Grade;
+
 public class Manager extends Employee {
 
-    private String department;
     private int teamSize;
     private int yearsOfExperience;
 
-    public Manager(int id, String firstName, String lastName, int age, String occupation, int income, String department, int teamSize, int yearsOfExperience) {
-        super(id, firstName, lastName, age, occupation, income);
-        this.department = department;
+    public Manager(int id, String firstName, String lastName, int age, Department department, Grade grade, int income, int teamSize, int yearsOfExperience) {
+        super(id, firstName, lastName, age, department, grade, income);
         this.teamSize = teamSize;
         this.yearsOfExperience = yearsOfExperience;
     }
@@ -25,14 +26,6 @@ public class Manager extends Employee {
     }
 
     //getters and setters section
-    public String getDepartment() {
-        return department;
-    }
-
-    public void setDepartment(String department) {
-        this.department = department;
-    }
-
     public int getTeamSize() {
         return teamSize;
     }
@@ -52,8 +45,7 @@ public class Manager extends Employee {
     @Override
     public String toString() {
         return "Manager{" +
-                "department='" + department + '\'' +
-                ", teamSize=" + teamSize +
+                "teamSize=" + teamSize +
                 ", yearsOfExperience=" + yearsOfExperience +
                 '}';
     }

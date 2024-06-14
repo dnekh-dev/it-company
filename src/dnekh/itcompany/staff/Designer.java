@@ -1,12 +1,15 @@
 package dnekh.itcompany.staff;
 
+import dnekh.itcompany.enums.Department;
+import dnekh.itcompany.enums.Grade;
+
 public class Designer extends Employee {
 
     private String designTools;
     private String specialization;
 
-    public Designer(int id, String firstName, String lastName, int age, String occupation, int income, String designTools, String specialization) {
-        super(id, firstName, lastName, age, occupation, income);
+    public Designer(int id, String firstName, String lastName, int age, Department department, Grade grade, int income, String designTools, String specialization) {
+        super(id, firstName, lastName, age, department, grade, income);
         this.designTools = designTools;
         this.specialization = specialization;
     }

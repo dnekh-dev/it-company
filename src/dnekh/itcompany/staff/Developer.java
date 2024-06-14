@@ -1,12 +1,15 @@
 package dnekh.itcompany.staff;
 
+import dnekh.itcompany.enums.Department;
+import dnekh.itcompany.enums.Grade;
+
 public class Developer extends Employee {
 
     private String programmingLanguage;
     private boolean isBackEndDeveloper;
 
-    public Developer(int id, String firstName, String lastName, int age, String occupation, int income, String programmingLanguage, boolean isBackEndDeveloper) {
-        super(id, firstName, lastName, age, occupation, income);
+    public Developer(int id, String firstName, String lastName, int age, Department department, Grade grade, int income, String programmingLanguage, boolean isBackEndDeveloper) {
+        super(id, firstName, lastName, age, department, grade, income);
         this.programmingLanguage = programmingLanguage;
         this.isBackEndDeveloper = isBackEndDeveloper;
     }

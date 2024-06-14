@@ -1,20 +1,25 @@
 package dnekh.itcompany.staff;
 
+import dnekh.itcompany.enums.Department;
+import dnekh.itcompany.enums.Grade;
+
 public abstract class Employee {
 
     private final int id;
     private String firstName;
     private String lastName;
     private int age;
-    private String occupation;
+    private Department department;
+    private Grade grade;
     private int income;
 
-    public Employee(int id, String firstName, String lastName, int age, String occupation, int income) {
+    public Employee(int id, String firstName, String lastName, int age, Department department, Grade grade, int income) {
         this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
         this.age = age;
-        this.occupation = occupation;
+        this.department = department;
+        this.grade = grade;
         this.income = income;
     }
 
@@ -49,12 +54,20 @@ public abstract class Employee {
         this.age = age;
     }
 
-    public String getOccupation() {
-        return occupation;
+    public Department getDepartment() {
+        return department;
     }
 
-    public void setOccupation(String occupation) {
-        this.occupation = occupation;
+    public void setDepartment(Department department) {
+        this.department = department;
+    }
+
+    public Grade getGrade() {
+        return grade;
+    }
+
+    public void setGrade(Grade grade) {
+        this.grade = grade;
     }
 
     public int getIncome() {
@@ -72,7 +85,8 @@ public abstract class Employee {
                 ", firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +
                 ", age=" + age +
-                ", occupation='" + occupation + '\'' +
+                ", department=" + department +
+                ", grade=" + grade +
                 ", income=" + income +
                 '}';
     }
