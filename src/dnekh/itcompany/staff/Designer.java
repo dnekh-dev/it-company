@@ -11,6 +11,12 @@ public class Designer extends Employee {
         this.specialization = specialization;
     }
 
+    public Designer(int income, String designTools, String specialization) {
+        super(income);
+        this.designTools = designTools;
+        this.specialization = specialization;
+    }
+
     @Override
     public void toWork() {
         System.out.println("Designer is working");
