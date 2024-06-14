@@ -13,6 +13,12 @@ public class Manager extends Employee {
         this.yearsOfExperience = yearsOfExperience;
     }
 
+    public void manipulate(String... names) {
+        for (var name : names) {
+            System.out.printf("%s must does his work!", name);
+        }
+    }
+
     @Override
     public void toWork() {
         System.out.println("Manager is working");

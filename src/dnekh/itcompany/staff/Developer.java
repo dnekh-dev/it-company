@@ -11,7 +11,7 @@ public class Developer extends Employee {
         this.isBackEndDeveloper = isBackEndDeveloper;
     }
 
-    public void writeCodeLines(int quantityOfCodeLines) {
+    public void toWriteLinesOfCode(int quantityOfCodeLines) {
         System.out.println("Developer has written " + quantityOfCodeLines + " lines of code");
     }
 
