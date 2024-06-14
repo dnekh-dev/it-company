@@ -1,4 +1,4 @@
-package dnekh.itcompany.staff.service.interfaces;
+package dnekh.itcompany.service.interfaces;
 
 public interface ManagerService extends Service {
 

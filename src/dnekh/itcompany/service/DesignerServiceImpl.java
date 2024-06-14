@@ -1,6 +1,6 @@
-package dnekh.itcompany.staff.service;
+package dnekh.itcompany.service;
 
-import dnekh.itcompany.staff.service.interfaces.DesignerService;
+import dnekh.itcompany.service.interfaces.DesignerService;
 
 public class DesignerServiceImpl implements DesignerService {
 

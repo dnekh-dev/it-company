@@ -1,6 +1,6 @@
-package dnekh.itcompany.staff.service;
+package dnekh.itcompany.service;
 
-import dnekh.itcompany.staff.service.interfaces.ManagerService;
+import dnekh.itcompany.service.interfaces.ManagerService;
 
 public class ManagerServiceImpl implements ManagerService {
 

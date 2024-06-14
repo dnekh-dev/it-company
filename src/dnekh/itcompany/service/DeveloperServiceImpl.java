@@ -1,6 +1,6 @@
-package dnekh.itcompany.staff.service;
+package dnekh.itcompany.service;
 
-import dnekh.itcompany.staff.service.interfaces.DeveloperService;
+import dnekh.itcompany.service.interfaces.DeveloperService;
 
 public class DeveloperServiceImpl implements DeveloperService {
 
