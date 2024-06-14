@@ -13,13 +13,6 @@ public class Manager extends Employee {
         this.yearsOfExperience = yearsOfExperience;
     }
 
-    public Manager(int income, String department, int teamSize, int yearsOfExperience) {
-        super(income);
-        this.department = department;
-        this.teamSize = teamSize;
-        this.yearsOfExperience = yearsOfExperience;
-    }
-
     public void manipulate(String... names) {
         for (var name : names) {
             System.out.printf("%s must does his work!", name);

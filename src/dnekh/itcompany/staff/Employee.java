@@ -1,6 +1,6 @@
 package dnekh.itcompany.staff;
 
-public class Employee {
+public abstract class Employee {
 
     private final int id;
     private String firstName;
@@ -8,10 +8,6 @@ public class Employee {
     private int age;
     private String occupation;
     private int income;
-
-    public Employee(int id) {
-        this.id = id;
-    }
 
     public Employee(int id, String firstName, String lastName, int age, String occupation, int income) {
         this.id = id;
@@ -22,9 +18,7 @@ public class Employee {
         this.income = income;
     }
 
-    public void toWork() {
-        System.out.println("Employee is working1");
-    }
+    public abstract void toWork();
 
     //getters and setters section
     public int getId() {

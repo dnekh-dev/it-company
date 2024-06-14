@@ -11,16 +11,6 @@ public class Developer extends Employee {
         this.isBackEndDeveloper = isBackEndDeveloper;
     }
 
-    public Developer(int income, String programmingLanguage, boolean isBackEndDeveloper) {
-        super(income);
-        this.programmingLanguage = programmingLanguage;
-        this.isBackEndDeveloper = isBackEndDeveloper;
-    }
-
-    public void toWriteLinesOfCode(int quantityOfCodeLines) {
-        System.out.println("Developer has written " + quantityOfCodeLines + " lines of code");
-    }
-
     @Override
     public void toWork() {
         System.out.println("Developer is working");
